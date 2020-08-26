@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Happy;
+  src: url(../fonts/happy-times-NG_regular_master_web.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Happy;
+  src: url(../fonts/happy-times-NG_bold_master_web.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Happy;
+  src: url(../fonts/happy-times-NG_italic_master_web.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+    font-family: Happy;
+    color: #930731;
+	font-size: 36px;
+	background: #fff6e8;
+}
+
+p{
+	margin-top: 0.6rem;
+}
+
+p span.name {
+ font-style: italic;
+}
+
+div#wrapper, footer{
+	padding: 0 0.8rem;
+}
+
+h2{
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 0.6rem;
+}
+
+footer{
+	margin-bottom: 1rem;
+}
+
+a{
+	font-family: Happy;
+	color: #930731;
+}
+
+a:hover{
+	font-style: italic;
+}
+
+p::selection, h2::selection{
+	color: #930731;
+	background: #930731;
+}
+
+a::selection{
+	color: #930731;
+	background: #930731;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	line-height: 1.4em;
+}
+
+img#manifest{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	display: none;
+}
+
+div#bottons{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+div#botons div{
+	width: 30%;
+}
+
+div#top {
+	display: flex;
+}
+
+div#top img{
+	position: relative;
+	right: -10px;
+	overflow: hidden;
+}
+
+/*mg#top{
+	transform: scale(0.3);
+	position: absolute;
+	top: -620px;
+	right: -800px;
+}*/
+
+@media (max-width: 600px) {
+  body{
+  	font-size: 30px;
+  }
+
+  h2{
+  	font-size: 30px;
+  }
+
+  img#manifest{
+  	width: 300px;
+  }
+}
